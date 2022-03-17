@@ -37,7 +37,7 @@ First step of the current tutorial is downloading the file named:
 
  * `GRCh38.illumina.brain.1.bam` [Note: the file have approx. `8.3GB`]
 
-(Please note that the download speed from Ensembl's FTP server is quite low, as I got download speed of 200-300 KB for a file as large as 8.3 GB, so the downloading took several hours.)
+(Please note that the download speed from Ensembl's FTP server is quite low, as I got download speed of 200-300 KB for a file as large as `8.3 GB`, so the downloading took several hours.)
 
 Then move the downloaded file in the same directory as your R Markdown (or the R console's working directory).
 
@@ -72,7 +72,7 @@ Define a filename -- the name of the file that was downloaded:
 filename = 'GRCh38.illumina.brain.1.bam'
 ```
 
-Get information of the *size* of the file. BAM is a binary file, below `R` command will display the size in `"autp"` scale, e.g., "Kb"/"Gb", etc.:
+Get information of the *size* of the file. BAM is a binary file, below `R` command will display the size in `"autp"` scale, e.g., `MB`/`GB`, etc.:
 ```{r file_size}
 utils:::format.object_size(file.info(filename)$size, "auto")
 ```

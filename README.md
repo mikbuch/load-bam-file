@@ -1,6 +1,6 @@
 # Loading BAM files with R
 
-An example on how to load BAM file and preview sequence lenghts (in `R Markdown`).
+An example on how to load BAM file and preview sequence information (in `R Markdown`).
 
 ![Sequence lenghts](images/Sequence lenghts.png)
 

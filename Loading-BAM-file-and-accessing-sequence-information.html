@@ -221,7 +221,7 @@ Last edited:   March 17, 2022</code></pre>
 <ul>
 <li><code>GRCh38.illumina.brain.1.bam</code> [Note: the file have approx. <code>8.3GB</code>]</li>
 </ul>
-<p>(Please note that the download speed from Ensembl’s FTP server is quite low, as I got download speed of 200-300 KB for a file as large as 8.3 GB, so the downloading took several hours.)</p>
+<p>(Please note that the download speed from Ensembl’s FTP server is quite low, as I got download speed of 200-300 KB for a file as large as <code>8.3 GB</code>, so the downloading took several hours.)</p>
 <p>Then move the downloaded file in the same directory as your R Markdown (or the R console’s working directory).</p>
 </div>
 <div id="gemonic-file-formats" class="section level3">
@@ -245,7 +245,7 @@ Last edited:   March 17, 2022</code></pre>
 <pre class="r"><code>library(Rsamtools)</code></pre>
 <p>Define a filename – the name of the file that was downloaded:</p>
 <pre class="r"><code>filename = &#39;GRCh38.illumina.brain.1.bam&#39;</code></pre>
-<p>Get information of the <em>size</em> of the file. BAM is a binary file, below <code>R</code> command will display the size in <code>&quot;autp&quot;</code> scale, e.g., “Kb”/“Gb”, etc.:</p>
+<p>Get information of the <em>size</em> of the file. BAM is a binary file, below <code>R</code> command will display the size in <code>&quot;autp&quot;</code> scale, e.g., <code>MB</code>/<code>GB</code>, etc.:</p>
 <pre class="r"><code>utils:::format.object_size(file.info(filename)$size, &quot;auto&quot;)</code></pre>
 <pre><code>## [1] &quot;8.3 Gb&quot;</code></pre>
 <p>Because the file is has over 7 GB <code>Rsamtools</code> does not loads the entire file right away. Instead the object representing genetic data is created and the data (information on sequences, quality and/or mapping) is loaded on request, see below.</p>
