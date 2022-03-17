@@ -1,0 +1,2 @@
+# BAM files are quite big, ignore them in the VCS repository
+*.bam
