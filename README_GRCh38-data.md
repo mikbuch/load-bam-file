@@ -5,7 +5,7 @@ The content in this document is an adaptation of the README document that can be
 ```
 
 
-![Data list](images/Data list.png)
+![Data list](https://raw.githubusercontent.com/mikbuch/load-bam-file/main/images/Data%20list.png)
 
 Link to the general information: [https://www.ensembl.org/info/data/ftp/index.html](https://www.ensembl.org/info/data/ftp/index.html)
 

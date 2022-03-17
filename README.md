@@ -2,7 +2,7 @@
 
 An example on how to load BAM file and preview sequence information (in `R Markdown`).
 
-![Sequence lenghts](images/Sequence lenghts.png)
+![Sequence lenghts](https://raw.githubusercontent.com/mikbuch/load-bam-file/main/images/Sequence%20lenghts.png)
 
 
 ## Data
